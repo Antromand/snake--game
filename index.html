@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Game "Snake": main menu</title>
+    <link rel="stylesheet" href="style/mainstyle.css">
+</head>
+<body>
+    <div>
+		<input name="sound" type="radio" class="sound soundOff" id="soundOff">
+		<label for="soundOff" class="labelOff"></label>
+		<input name="sound" type="radio" class="sound soundOn" checked id="soundOn">
+		<label for="soundOn" class="labelOn"></label>
+	</div> 
+    <audio src="media/8bp139-02-kris_keyser-ok.mp3" type="audio/mpeg" autoplay loop>
+    </audio>
+    <div class="logo">
+       Snake
+    </div>   
+    <a class="newGame" href="game.html" title="Начать игру">
+        New Game
+    </a>
+    
+    <div class="popupHelp" id="popupHelp">
+        <div class="popupClose">
+          <a href="#"></a>
+           <div>
+           Классическа игра змейка.<br>
+           Управление осуществляется стрелками на клавиатуре.
+           </div>
+        </div>
+    </div>
+    <a href="#popupHelp" class="help">Help</a>
+    
+    <div class="popupHelp" id="popupSettings">
+        <div class="popupClose">
+          <a href="#"></a>
+           <div>
+           Уровеь громкости<br>
+           Сложность<br>
+           Размер поля
+           </div>
+        </div>
+    </div>
+    <a href="#popupSettings" class="help">Settings</a>    
+
+    <div class="popupHelp" id="popupScore">
+        <div class="popupClose">
+          <a href="#"></a>
+           <div>
+           Игрок1 - 100<br>
+           Игрок2 - 500<br>
+           Игрок4 - 50
+           </div>
+        </div>
+    </div>
+    <a href="#popupScore" class="help">Score</a>
+
+<script src="script/mainmenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+
+.sound,
+.labelON,
+audio {
+	display: none;
+}
+
+label {
+	position: absolute;
+    right: 50px;
+    top: 50px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.labelOn {
+	background: url("../img/audio.png") no-repeat 50% 50%;
+	display: none;
+}
+
+.labelOff {
+	background: url("../img/no-audio.png") no-repeat 50% 50%;
+}
+
+.logo {
+    margin: 100px auto 50px;
+	width: 300px;
+    text-align: center;
+    font-size: 100px;
+    transition: 3s text-shadow;
+    cursor: default;
+}
+
+.logo:hover {
+    transition: 1s text-shadow;
+    text-shadow: 30px 30px 20px #222, 
+                 -30px -30px 20px #222;
+}
+
+.newGame {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    margin: 0 auto 30px;
+	width: 300px;
+}
+
+.popupHelp {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #808080f5;
+    text-decoration: none;
+}
+
+#popupHelp:target {
+    display: table;
+}
+
+#popupSettings:target {
+    display: table;
+}
+
+#popupScore:target {
+    display: table;
+}
+
+.popupClose {
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.popupClose div {
+    width: 500px;
+    margin: auto;
+}
+
+.help {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+	width: 100px;
+	margin: 0 auto;    
+}
+
+.popupClose a {
+	background: url(../img/close-window.png) no-repeat 50% 50%;
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
